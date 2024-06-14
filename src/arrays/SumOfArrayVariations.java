@@ -31,6 +31,8 @@ public class SumOfArrayVariations {
         return sum;
     }
 
+    // this program prints the maximum and the minimum sum of the elements of array
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the number of elements in the array");
