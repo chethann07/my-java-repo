@@ -2,8 +2,7 @@ package arrays;
 
 import java.util.Scanner;
 
-public class sumOfArrayVariation {
-
+public class SumOfArrayVariations {
     public static int largestElement(int[] array) {
         int max = Integer.MIN_VALUE;
         for (int i = 0; i < array.length; i++) {
