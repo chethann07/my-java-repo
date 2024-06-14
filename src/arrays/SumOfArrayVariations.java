@@ -3,6 +3,7 @@ package arrays;
 import java.util.Scanner;
 
 public class SumOfArrayVariations {
+    // Finds the largest number in the array
     public static int largestElement(int[] array) {
         int max = Integer.MIN_VALUE;
         for (int i = 0; i < array.length; i++) {
@@ -13,6 +14,7 @@ public class SumOfArrayVariations {
         return max;
     }
 
+    // Finds the smallest number in the array
     public static int smallestElement(int[] array) {
         int min = Integer.MAX_VALUE;
         for (int i = 0; i < array.length; i++) {
