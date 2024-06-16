@@ -17,6 +17,7 @@ public class FindingIndex {
         System.out.println("The index of maximum element in the array is : " + index);
     }
 
+    // This program finds the index of the maximum number in the array
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the number of elements in the array");
