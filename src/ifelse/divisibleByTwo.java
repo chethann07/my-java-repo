@@ -1,7 +1,9 @@
 package ifelse;
 
+// Write a program to check wheather the number is divisible by 2,5 and 10
 import java.util.Scanner;
 
+// This program checks wheather the number is divisible by 2
 public class divisibleByTwo {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

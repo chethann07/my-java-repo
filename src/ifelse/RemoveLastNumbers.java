@@ -1,7 +1,9 @@
 package ifelse;
 
+// Write a program to remove the last numbers
 import java.util.Scanner;
 
+// This program removes the last numbers
 public class RemoveLastNumbers {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -15,6 +17,5 @@ public class RemoveLastNumbers {
         int res = (int) (num / Math.pow(10, (n - 2)));
         System.out.println(res);
         scan.close();
-
     }
 }

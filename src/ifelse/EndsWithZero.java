@@ -1,7 +1,9 @@
 package ifelse;
 
+// Write a program to check wheather the number ends with zero or not
 import java.util.Scanner;
 
+// This program checks wheather the number ends with zero or not
 public class EndsWithZero {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
