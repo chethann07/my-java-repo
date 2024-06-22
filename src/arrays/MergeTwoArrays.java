@@ -1,27 +1,32 @@
 package arrays;
 
-// Write a program to print the elements that are repeated in both the sorted arrays
+// Given two sorted arrays, write a program to merge these two arrays such that the resultant array is sorted
 import java.util.Scanner;
 
-public class RepeatingInTwoArrays {
-
-    public static void findRepeatingNum(int[] arr1, int[] arr2) {
-        int i = 0, j = 0;
-        System.out.println("The repeating elements :");
+public class MergeTwoArrays {
+    // this program merges two sorted arrays such that the resultant array is sorted
+    public static void mergingTwoArrays(int[] arr1, int[] arr2) {
+        int[] res = new int[arr1.length + arr2.length];
+        int i = 0, j = 0, k = 0;
         while (i < arr1.length && j < arr2.length) {
-            if (arr1[i] == arr2[j]) {
-                System.out.println(arr1[i]);
-                i++;
-                j++;
-            } else if (arr1[i] > arr2[j]) {
-                j++;
+            if (arr2[j] <= arr1[i]) {
+                res[k++] = arr2[j++];
             } else {
-                i++;
+                res[k++] = arr1[i++];
             }
+        }
+        while (i < arr1.length) {
+            res[k++] = arr1[i++];
+        }
+        while (j < arr2.length) {
+            res[k++] = arr2[j++];
+        }
+
+        for (int n = 0; n < res.length; n++) {
+            System.out.print(res[n] + " ");
         }
     }
 
-    // This program prints all the repeated elements present in both the arrays
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the number of elements in array 1 :");
@@ -38,7 +43,7 @@ public class RepeatingInTwoArrays {
         for (int i = 0; i < n; i++) {
             arr2[i] = scan.nextInt();
         }
-        findRepeatingNum(arr1, arr2);
+        mergingTwoArrays(arr1, arr2);
         scan.close();
     }
 }
