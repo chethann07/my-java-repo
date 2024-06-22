@@ -1,22 +1,26 @@
 package arrays;
 
+// Write a program to find number of subarrays whose sum is equal to a given value k 
 import java.util.Scanner;
 
-// Write a program to find the sum of the subarray of given size for a given array
-public class SumOfSubArrays {
+public class FindKInSubArray {
 
-    public static void printSumOfSubArray(int[] arr, int size) {
-        System.out.println("The sum of subarrays are :");
+    public static void findK(int[] arr, int size, int k) {
+        int count = 0;
         for (int i = 0; i <= arr.length - size; i++) {
             int sum = 0;
             for (int j = i; j < i + size; j++) {
                 sum = sum + arr[j];
             }
-            System.out.println(sum);
+            if (sum == k) {
+                count++;
+            }
         }
+        System.out.println("The number of subarrays whose sum is equal to k are : " + count);
     }
 
-    // this program finds the sum of the subarray of given size for a given array
+    // this program finds the number of subarrays whose sum is equal to a given
+    // value k
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the number of elements in array :");
@@ -28,7 +32,9 @@ public class SumOfSubArrays {
         }
         System.out.println("Enter the size of subarray :");
         int size = scan.nextInt();
-        printSumOfSubArray(arr, size);
+        System.out.println("Enter the value of k :");
+        int k = scan.nextInt();
+        findK(arr, size, k);
         scan.close();
     }
 }
