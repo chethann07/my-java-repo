@@ -1,5 +1,6 @@
 package loops;
 
+// Given the values of n, a and b print all the multiples of a and b less than n
 import java.util.Scanner;
 
 public class MultiplesOfNum {
@@ -13,6 +14,7 @@ public class MultiplesOfNum {
         }
     }
 
+    // this program prints all the multiples of a and b less than n
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the value of n :");
