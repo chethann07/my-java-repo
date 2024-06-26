@@ -8,7 +8,7 @@ public class ConsecutiveSubArrayVariation {
     public static void findSubArray(int[] arr) {
         System.out.println("The subarray are :");
         for (int i = 0; i < arr.length - 1; i++) {
-            if (arr[i + 1] > arr[i]) {
+            if (arr[i + 1] >= arr[i]) {
                 System.out.print(arr[i] + " ");
             } else {
                 System.out.print(arr[i]);
