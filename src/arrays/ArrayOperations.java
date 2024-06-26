@@ -1,5 +1,6 @@
 package arrays;
 
+// This program has the basic operations that can be performed on an array 
 import java.util.Scanner;
 
 public class ArrayOperations {
