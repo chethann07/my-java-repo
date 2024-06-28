@@ -1,6 +1,6 @@
 package arrays;
 
-// Given an array of integers, write a program to print the length consecutive subarrays
+// Given an array of integers, write a program to print the longest consecutive subarrays
 import java.util.Scanner;
 
 public class PrintLongestConsecutiveSubArray {
