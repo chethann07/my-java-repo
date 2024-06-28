@@ -16,6 +16,15 @@ public class HCF {
         }
     }
 
+    public static int euclidsAlgorithm(int m, int n) {
+        while (n != 0) {
+            int temp = n;
+            n = m % n;
+            m = temp;
+        }
+        return m;
+    }
+
     /*
      * this program prints the common factors of m and n
      * Input:
@@ -33,7 +42,9 @@ public class HCF {
         int m = scan.nextInt();
         System.out.println("Enter the value of n :");
         int n = scan.nextInt();
-        highestCommonFactor(m, n);
+        int res = euclidsAlgorithm(m, n);
+        System.out.println("The highest common factor of m and n is : ");
+        System.out.println(res);
         scan.close();
     }
 }
