@@ -7,6 +7,7 @@ public class CommonFactors {
 
     public static void factorsOfN(int m, int n) {
         System.out.println("The common factors of m and n are : ");
+        // int min = m < n ? m : n; this is optional
         for (int i = 1; i <= n; i++) {
             if (m % i == 0 && n % i == 0) {
                 System.out.print(i + " ");
