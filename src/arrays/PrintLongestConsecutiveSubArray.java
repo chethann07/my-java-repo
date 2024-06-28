@@ -11,14 +11,14 @@ public class PrintLongestConsecutiveSubArray {
             if (arr[i + 1] - arr[i] == 1) {
                 count++;
             } else {
-                if (count > max) {
+                if (count >= max) {
                     max = count;
                     ei = i;
                 }
                 count = 1;
             }
         }
-        if (count > max) {
+        if (count >= max) {
             max = count;
             ei = arr.length - 1;
         }
