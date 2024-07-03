@@ -13,6 +13,8 @@ public class SwapCase {
                 t = t + (char) (ch - 32);
             } else if (ch >= 'A' && ch <= 'Z') {
                 t = t + (char) (ch + 32);
+            } else {
+                t = t + ch;
             }
         }
         System.out.println("The swapcase string is :");
