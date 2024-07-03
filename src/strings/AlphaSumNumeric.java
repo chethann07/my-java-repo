@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class AlphaSumNumeric {
 
-    public static void countAll(String s) {
+    public static void replace(String s) {
         String t = "";
         int sum = 0;
         for (int i = 0; i < s.length(); i++) {
@@ -34,7 +34,7 @@ public class AlphaSumNumeric {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the string :");
         String s = scan.nextLine();
-        countAll(s);
+        replace(s);
         scan.close();
     }
 }
