@@ -1,0 +1,37 @@
+package strings;
+
+// Write a program to convert a string to swapcase
+import java.util.Scanner;
+
+public class SwapCase {
+
+    public static void toLower(String s) {
+        String t = "";
+        for (int j = 0; j < s.length(); j++) {
+            char ch = s.charAt(j);
+            if (ch >= 'a' && ch <= 'z') {
+                t = t + (char) (ch - 32);
+            } else if (ch >= 'A' && ch <= 'Z') {
+                t = t + (char) (ch + 32);
+            }
+        }
+        System.out.println("The swapcase string is :");
+        System.out.println(t);
+    }
+
+    /*
+     * Input:
+     * Enter the string :
+     * hEllO
+     * Output:
+     * The swapcase string is :
+     * HeLLo
+     */
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the string :");
+        String s = scan.nextLine();
+        toLower(s);
+        scan.close();
+    }
+}
