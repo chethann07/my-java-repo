@@ -3,20 +3,16 @@ package strings;
 // Write a program to add a star infront of a
 import java.util.Scanner;
 
-public class AddStarFront {
+public class FindIndex {
 
-    public static void addStar(String s) {
-        String t = "";
+    public static int findKIndex(String s, char k) {
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-            if (ch == 'a' || ch == 'A') {
-                t = t + "*" + ch;
-            } else {
-                t = t + ch;
+            if (ch == k) {
+                return i;
             }
         }
-        System.out.println("The altered string is :");
-        System.out.println(t);
+        return -1;
     }
 
     /*
@@ -31,7 +27,15 @@ public class AddStarFront {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the string :");
         String s = scan.nextLine();
-        addStar(s);
+        System.out.println("Enter the charecter k :");
+        char k = scan.next().charAt(0);
+        int res = findKIndex(s, k);
+        if (res > 0) {
+            System.out.println("The index of k is :");
+            System.out.println(res);
+        } else {
+            System.out.println("The charecter not in string :");
+        }
         scan.close();
     }
 }
