@@ -1,6 +1,6 @@
 package strings;
 
-// Write a program to add a star infront of a
+// Write a program to find the index of a charecter k in a string
 import java.util.Scanner;
 
 public class FindIndex {
@@ -18,10 +18,12 @@ public class FindIndex {
     /*
      * Input:
      * Enter the string :
-     * banana
+     * matrix
      * Output:
-     * The altered string is :
-     * b*an*an*a
+     * Enter the charecter k :
+     * i
+     * The index of k is :
+     * 4
      */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
