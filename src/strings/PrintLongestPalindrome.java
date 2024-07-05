@@ -38,7 +38,7 @@ public class PrintLongestPalindrome {
      * Enter the string :
      * mississippi
      * Output:
-     * TThe longest palindromic substring :
+     * The longest palindromic substring :
      * ississi
      */
     public static void main(String[] args) {
