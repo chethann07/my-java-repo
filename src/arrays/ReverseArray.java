@@ -1,5 +1,6 @@
 package arrays;
 
+// Write a program a reverse an array
 import java.util.Scanner;
 
 public class ReverseArray {
@@ -20,6 +21,17 @@ public class ReverseArray {
         }
     }
 
+    /*
+     * Input:
+     * Enter the size of array :
+     * 5
+     * Enter the elements of the array :
+     * 1 2 3 4 5
+     * Output:
+     * The reversed array is :
+     * 5 4 3 2 1
+     */
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the size of array :");
@@ -29,6 +41,7 @@ public class ReverseArray {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = scan.nextInt();
         }
+        System.out.println("The reversed array is :");
         reverse(arr);
         scan.close();
     }
