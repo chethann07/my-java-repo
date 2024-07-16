@@ -1,17 +1,9 @@
 package strings;
 
-// Write a program to print each word of a string in reversed manner 
+// Write a program to print string in reversed manner
 import java.util.Scanner;
 
-public class ReverseLettersInAString {
-
-    public static String reverse(String s) {
-        String t = "";
-        for (int i = s.length() - 1; i >= 0; i--) {
-            t = t + s.charAt(i);
-        }
-        return t;
-    }
+public class ReverseWordInAString {
 
     public static int countWords(String s) {
         int count = 1;
@@ -47,16 +39,16 @@ public class ReverseLettersInAString {
      * Enter the string :
      * india is my country
      * Output:
-     * aidni si ym yrtnuoc
+     * country my is india
      */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the string : ");
         String s = scan.nextLine();
         String res[] = split(s, countWords(s));
-        for (int i = 0; i < res.length; i++) {
+        for (int i = res.length - 1; i >= 0; i--) {
             if (res[i] != null) {
-                System.out.print(reverse(res[i]) + " ");
+                System.out.print(res[i] + " ");
             }
         }
         scan.close();
