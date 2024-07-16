@@ -43,7 +43,7 @@ public class LongestVowelSubString {
 
             }
             if (counta > 0 && counte > 0 && counti > 0 && counto > 0 && countu > 0) {
-                System.out.println(t);
+                System.out.println();
             } else {
                 System.out.println("None");
             }
