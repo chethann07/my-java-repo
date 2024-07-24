@@ -1,6 +1,6 @@
 package concepts;
 
-public class Example {
+public class PrintWithoutSemicolon {
 
     static {
         System.out.println("Hello world");
