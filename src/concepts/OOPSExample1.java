@@ -74,11 +74,11 @@ class Factory {
 public class OOPSExample1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String input = scan.nextLine();
-        String[] inputArr = input.split(",");
-        int i = 0;
-        String itemName = inputArr[i++];
-        double price = Double.parseDouble(inputArr[i++]);
+        // String input = scan.nextLine();
+        // String[] inputArr = input.split(",");
+        // int i = 0;
+        // String itemName = inputArr[i++];
+        // double price = Double.parseDouble(inputArr[i++]);
 
         scan.close();
     }

@@ -19,21 +19,8 @@ public class CountFrequency {
             while (i < s.length() && ch == s.charAt(i)) {
                 count++;
                 i++;
-                // System.out.println("i =" + i);
             }
 
-            // while (ch == s.charAt(i)) {
-
-            // count++;
-            // i++;
-            // // if (i < s.length()) {
-            // // i++;
-            // // } else {
-            // // break;
-            // // }
-            // System.out.print(ch + "" + count + "" + i);
-            // }
-            // System.out.println();
             System.out.print(ch + "" + count);
             // System.out.println();
         }

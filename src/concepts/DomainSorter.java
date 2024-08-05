@@ -33,8 +33,8 @@ public class DomainSorter {
         }
 
         // Print each domain on a new line
-        for (String domain : urlArray) {
-            System.out.println(domain);
+        for (int i = 0; i < urlArray.length; i++) {
+            System.out.println(urlArray[i]);
         }
     }
 }
